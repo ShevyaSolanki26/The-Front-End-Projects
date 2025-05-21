@@ -1,4 +1,4 @@
-🌤️ Real-Time Weather App
+# 🌤️ Real-Time Weather App
 
 🧩 Project Overview:
 The Real-Time Weather App is a responsive and interactive web application that provides live weather updates for any city around the world. It displays the current temperature, date and time, weather condition, and allows users to switch between Celsius and Fahrenheit seamlessly. The app uses a third-party weather API to fetch real-time data.
