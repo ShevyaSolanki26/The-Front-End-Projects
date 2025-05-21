@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #01161e;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Weather Card */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.weather {
+  background-color: #0d2b34;
+  padding: 2rem 3rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.temp {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #4ecdc4;
+}
+
+.time_location p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.time_location span {
+  font-size: 0.95rem;
+  color: #b0b0b0;
+}
+
+.weather_condition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather_condition img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 0.5rem;
+}
+
+.weather_condition span {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* Search Bar */
+nav {
+  width: 100%;
+  padding: 1rem 0;
+  background-color: rgba(180, 177, 177, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+
+nav form {
+  width: 70%;
+  max-width: 600px;
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  gap: 0.5rem;
+}
+
+.searchField {
+  font-size: 1.1rem;
+  padding: 0.8rem 1rem;
+  border: 1px solid #4ecdc4;
+  border-radius: 8px;
+  background-color: transparent;
+  color: white;
+  outline: none;
+}
+
+nav form button {
+  background-color: #4ecdc4;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+nav form button:hover {
+  background-color: #3cbcb4;
+}
+
+/* Toggle Buttons */
+.unit-toggle {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.unit-toggle button {
+  background-color: transparent;
+  color: #4ecdc4;
+  border: 1px solid #4ecdc4;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+}
+
+.unit-toggle button:hover {
+  background-color: #4ecdc4;
+  color: #01161e;
+}
+
+.unit-toggle button.active {
+  background-color: #4ecdc4;
+  color: #01161e;
+  font-weight: bold;
+}
